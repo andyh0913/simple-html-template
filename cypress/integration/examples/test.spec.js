@@ -2,7 +2,7 @@
 
 describe("DOM test", () => {
     it('succesfully loads', () => {
-        cy.visit('cypress/app/index.html')
+        cy.visit('index.html')
         cy.contains('0')  
     })
     it('click test', () => {
