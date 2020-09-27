@@ -3,4 +3,4 @@ node_js:
   - "node"
 cache: yarn
 before_script:
-  - wget --no-check-certificate $TESTCASE_URL -O private.test.js
+  - wget --no-check-certificate "$TESTCASE_URL" -O cypress/integration/examples/private.test.js
