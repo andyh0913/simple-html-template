@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("DOM test", () => {
+describe("Test A", () => {
     it('succesfully loads', () => {
         cy.visit('index.html')
         cy.contains('0')  
