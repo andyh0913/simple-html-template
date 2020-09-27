@@ -7,6 +7,6 @@ describe("Test A", () => {
     })
     it('click test', () => {
         cy.contains('+').click()
-        cy.get('#number-div').should('have.text', '1')
+        cy.get('#number-div').should('have.text', '2')
     })
 })
