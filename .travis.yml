@@ -4,3 +4,15 @@ node_js:
 cache: yarn
 before_script:
   - wget --no-check-certificate "$TESTCASE_URL" -O cypress/integration/examples/private.test.js
+
+after_success:
+  - echo "success"
+  - echo "$TRAVIS_TEST_RESULT"
+
+after_failure:
+  - echo "failure"
+  -  echo "$TRAVIS_TEST_RESULT"
+
+after_script:
+  - echo "$TRAVIS_REPO_SLUG"
+  - echo "$TRAVIS_JOB_WEB_URL"
